@@ -25,6 +25,7 @@ namespace MVCShop.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            ViewData["Title"] = "Products";
             List<Product> model = ProductManager.Shared.Products;
 
             return View(model);

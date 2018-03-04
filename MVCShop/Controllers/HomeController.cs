@@ -18,14 +18,8 @@ namespace MVCShop.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View(Product.GetAll());
-        }
-
-        public IActionResult Create(String productName) {
-
-            var product = Product.Create(productName, (decimal) 12.99);
-
-            return RedirectToAction("Index");
+            ViewData["Title"] = "MyShop Demo";
+            return View();
         }
 
         public IActionResult Error()

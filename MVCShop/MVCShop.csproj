@@ -19,4 +19,7 @@
     <Folder Include="Views\Product\" />
     <Folder Include="wwwroot\static\js\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Product\Editor.cshtml" />
+  </ItemGroup>
 </Project>
